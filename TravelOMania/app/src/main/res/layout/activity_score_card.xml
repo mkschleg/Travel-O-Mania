@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="group7.travelomania.ScoreCardActivity">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/help_button_text"
+        android:id="@+id/help_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+
+        android:id="@+id/imageView_avatar"
+        android:contentDescription="@string/imageView_Avatar_Description"
+        android:layout_alignParentRight="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="restart level"
+        android:id="@+id/restart_level"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:clickable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Level"
+
+        android:id="@+id/next_level"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/restart_level"
+        android:layout_alignParentBottom="true" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/good_job"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Score Details"
+        android:textSize="40dp"
+        android:textAllCaps="true"
+        android:textColor="#009900"
+        android:textStyle="bold"
+        android:id="@+id/score_card"
+        android:layout_below="@+id/imageView_avatar"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="30dp"
+        android:textAllCaps="true"
+        android:textColor="#cc0000"
+        android:textStyle="bold"
+        android:id="@+id/good_job"
+        android:layout_below="@+id/score_card"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/score"
+        android:textSize="30dp"
+        android:textAllCaps="true"
+        android:textColor="#4466cc"
+        android:textStyle="bold"
+        android:id="@+id/score"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_below="@id/imageView"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/score"
+        android:layout_marginLeft="50dp"
+        android:textSize="30sp"
+        android:textAllCaps="true"
+        android:textColor="#4444ff"
+        android:textStyle="bold"
+        android:id="@+id/score_value"
+        android:layout_alignParentLeft="true"
+
+
+
+        />
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="#ffffff"
+        android:text="@string/hints"
+        android:textSize="30dp"
+        android:textAllCaps="true"
+        android:textColor="#4466cc"
+        android:textStyle="bold"
+        android:id="@+id/hints"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/imageView"
+        android:padding="10dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hints"
+        android:textSize="30sp"
+        android:textAllCaps="true"
+        android:textColor="#4444ff"
+        android:textStyle="bold"
+        android:id="@+id/number_of_hints"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:id="@+id/hint_bulb"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/hints"
+        android:src="@drawable/bulb_real_on"
+        />
+
+
+
+
+
+
+
+
+</RelativeLayout>

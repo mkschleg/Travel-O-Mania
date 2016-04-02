@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="group7.travelomania.LevelActivity">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="\?"
+        android:id="@+id/btn_help"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageView_avatar"
+        android:src="@drawable/basic_avatar"
+        android:layout_alignRight="@id/btn_help"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="20dp"
+        android:text="Level 1"
+        android:textSize="30dp"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textStyle="bold"
+
+        android:id="@+id/textView_level"
+        android:layout_below="@+id/btn_help"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:text="1/7"
+        android:textSize="30dp"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:id="@+id/textView_questionNumber"
+        android:layout_below="@+id/imageView_avatar"
+        android:layout_alignParentRight="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="00:00"
+        android:id="@+id/textView_Timer"
+        android:layout_below="@+id/textView_questionNumber"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingTop="50dp"
+        android:paddingBottom="20dp"
+        android:text="What is the capital of U.S.A.?"
+        android:textSize="15dp"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textStyle="bold"
+
+        android:id="@+id/textView_question"
+        android:layout_below="@+id/textView_level"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Washington DC"
+        android:id="@+id/btn_option1"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/textView_question"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="New York city"
+        android:id="@+id/btn_option2"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/btn_option1"
+        android:layout_alignLeft="@+id/btn_option1"
+        android:layout_alignStart="@+id/btn_option1" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Los Angeles"
+        android:id="@+id/btn_option3"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/btn_option2"
+        android:layout_alignLeft="@+id/btn_option2"
+        android:layout_alignStart="@+id/btn_option2" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Ottawa"
+        android:id="@+id/btn_option4"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/btn_option3"
+        android:layout_alignLeft="@+id/btn_option3"
+        android:layout_alignStart="@+id/btn_option3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_next_text"
+        android:id="@+id/btn_next"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_hint">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageView_bulb"
+            android:src="@drawable/bulb_off"
+            android:layout_alignParentRight="false"
+            android:layout_toRightOf="@+id/textView_numHints" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0"
+            android:id="@+id/textView_numHints"
+            android:layout_alignParentBottom="false"
+            android:layout_centerVertical="true"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
