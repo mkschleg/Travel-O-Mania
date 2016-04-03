@@ -23,9 +23,8 @@ This link will take you to the spread sheet with all the questions and answers.
 Module Completion:
 
 Login Module - Thijs Benschop
-Continent Selection and Avatar Selection - Group Effort
 Category Selection - Grace Li
 Scorecard - Riddhi Chavda
-Navigation module - Matthew Schlegel
+Navigation module, Continent Selection and Avatar Selection - Matthew Schlegel
 
 
